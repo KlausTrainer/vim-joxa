@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:	Joxa
 " Maintainer:	Klaus Trainer <klaus_trainer@posteo.de>
-" Version:	1.0
+" URL:		https://github.com/KlausTrainer/vim-joxa
 
 " remove any old syntax stuff hanging around
 syn clear
