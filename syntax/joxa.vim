@@ -38,7 +38,7 @@ syn region	joxaString	start=/"/ skip=/\\\\\|\\"/ end=/"/	contained
 syn match	joxaNumber		"\d\+\(\.\d\+\)\?"		contained
 
 " Special Forms
-syn keyword joxaForm	let* try* case when receive do		contained
+syn keyword joxaForm	let* try* catch case when receive do	contained
 syn keyword joxaForm	fn apply quote quasiquote		contained
 syn keyword joxaForm	cons list string binary tuple		contained
 syn keyword joxaForm	macroexpand-1				contained
