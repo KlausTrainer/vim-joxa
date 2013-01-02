@@ -34,6 +34,9 @@ syn match	joxaEscapedChar	/\\\p/hs=s,he=s+1
 " Strings
 syn region	joxaString	start=/"/ skip=/\\\\\|\\"/ end=/"/
 
+" Numbers
+syn match	joxaNumber		"\d\+\(\.\d\+\)\?"		contained
+
 " Special Forms
 syn keyword joxaForm	let* try* case when receive do				contained
 syn keyword joxaForm	fn apply quote quasiquote				contained
@@ -47,8 +50,6 @@ syn keyword joxaDecl	defn+ defn defmacro+ defmacro		contained
 syn keyword joxaDecl	defspec+ defspec deftype+ deftype attr	contained
 
 syn keyword joxaRestArg	= &rest			contained
-
-syn match joxaNumber		"\d\+"		contained
 
 syn match joxaConcat		"\s\.\s"	contained
 
