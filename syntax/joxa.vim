@@ -15,8 +15,8 @@ syn cluster	joxaListCluster		contains=joxaAtom,joxaAtomMark,joxaBinary,joxaBQLis
 " Lists
 syn match	joxaSymbol	contained	/[^()\[\]\{\}<>:\'`,"; \t\~]\+/
 syn region	joxaList	matchgroup=Delimiter start=/[(\[]/ matchgroup=Delimiter end=/[)\]]/ contains=@joxaListCluster
-syn region	joxaTuple	matchgroup=Delimiter start="{" matchgroup=Delimiter end="}" contains=@joxaListCluster
-syn region	joxaBQList	matchgroup=PreProc   start="`(" matchgroup=PreProc end=")" contains=@joxaListCluster
+syn region	joxaTuple	matchgroup=Delimiter start=/{/ matchgroup=Delimiter end=/}/ contains=@joxaListCluster
+syn region	joxaBQList	matchgroup=PreProc   start=/`[(\[{]/ matchgroup=PreProc end=/[)\]}]/ contains=@joxaListCluster
 
 " Atoms
 syn match	joxaAtomMark	/[':]/
