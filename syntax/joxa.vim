@@ -19,7 +19,7 @@ syn region	joxaTuple	matchgroup=Delimiter start=/{/ matchgroup=Delimiter end=/}/
 syn region	joxaBQList	matchgroup=PreProc   start=/`[(\[{]/ matchgroup=PreProc end=/[)\]}]/ contains=@joxaListCluster
 
 " Atoms
-syn match	joxaAtomMark	/[':]/
+syn match	joxaAtomMark	/['`:]/
 syn match	joxaAtom	/'(/me=e-1				contains=joxaAtomMark nextgroup=joxaAtomList
 syn match	joxaAtom	/[':][^ \t()\]\}\~]\+/			contains=joxaAtomMark
 syn region	joxaAtom	start=/'"/	skip=/\\"/ end=/"/
