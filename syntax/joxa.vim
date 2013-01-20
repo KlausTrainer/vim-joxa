@@ -20,7 +20,6 @@ syn region	joxaBQList	matchgroup=PreProc   start=/`[(\[{]/ matchgroup=PreProc en
 
 " Atoms
 syn match	joxaAtomMark	/['`:]/
-syn match	joxaAtom	/'(/me=e-1				contains=joxaAtomMark nextgroup=joxaAtomList
 syn match	joxaAtom	/[':][^ \t()\]\}\~]\+/			contains=joxaAtomMark
 syn region	joxaAtom	start=/'"/	skip=/\\"/ end=/"/
 syn region	joxaAtomList	contained	start=/[(]/ end=/[)]/	contains=@joxaAtomCluster
